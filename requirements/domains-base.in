@@ -1,0 +1,20 @@
+# To update base.txt, run:
+#
+#    use the alias `ubuntu-default-pip-compile-venv` instead
+#    source ~/.venv/to-pip-compile-py3xxyy/bin/activate
+#    pip-compile requirements/domains-base.in
+#    docker-compose -f local.yml build
+#
+# To install in localhost, run:
+#
+#    pip-sync domains-base.txt
+#
+
+-c base-base.txt
+-c base-local.txt
+-c base-production.txt
+
+# ----------------------------------------------------------------
+# Project-specific Dependencies
+# ----------------------------------------------------------------
+

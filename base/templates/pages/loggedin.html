@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block container %}
+You're logged in.
+
+{% if user.is_authenticated %}
+<p>Username: <strong>{{ user.username }}</strong></p>
+
+<p><a href="/admin">Admin</a></p>
+<p><a href="/">Anonymous - Homepage</a></p>
+<p><strong>Logged in - Homepage</strong></p>
+<p><a href="/accounts/logout">Logout at /accounts </strong></p>
+{% endif %}
+{% endblock %}

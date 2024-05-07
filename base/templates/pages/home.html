@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block container %}
+Works!
+
+{% if user.is_authenticated %}
+<p>Username: <strong>{{ user.username }}</strong></p>
+
+<p><a href="/admin">Admin</a></p>
+<p><strong>Anonymous - Homepage</strong></p>
+<p><a href="/loggedin">Logged in - Homepage</strong></p>
+<p><a href="/accounts/logout">Logout at /accounts </strong></p>
+
+{% else %}
+
+
+<p><a href="/admin">Admin</a></p>
+<p><strong>Anonymous - Homepage</strong></p>
+<p><a href="/accounts/login">Login at /accounts </strong></p>
+
+{% endif %}
+{% endblock %}
+
