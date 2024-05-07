@@ -55,5 +55,5 @@ python-benedict==0.32.1  # 2023 Sept https://pypi.org/project/python-benedict/0.
 
 # Validation
 # ------------------------------------------------------------------------------
-webargs==8.3.0 # 2023 Jul https://github.com/marshmallow-code/webargs
+webargs==8.4.0 # 2023 Jul https://github.com/marshmallow-code/webargs
 marshmallow==3.20.1 # 2023 Jul https://github.com/marshmallow-code/marshmallow/3.20.1/
